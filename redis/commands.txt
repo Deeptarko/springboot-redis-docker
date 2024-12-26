@@ -1,0 +1,11 @@
+
+Curl Request For Making A Post Request-:
+
+Invoke-WebRequest -Uri "http://localhost:8080/redis/save" `
+-Method POST `
+-Headers @{ "Content-Type" = "application/x-www-form-urlencoded" } `
+-Body "key=dummyKey&value=dummyValue"
+
+Curl Request For Making A Get Request-:
+
+Invoke-WebRequest -Uri "http://localhost:8080/redis/get?key=dummyKey" -Method GET

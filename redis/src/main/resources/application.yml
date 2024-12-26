@@ -1,0 +1,5 @@
+spring:
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST:localhost}  # Fallback to localhost if not set
+      port: ${SPRING_REDIS_PORT:6379}       # Fallback to 6379 if not set
